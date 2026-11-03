@@ -137,6 +137,9 @@
                 <button onclick="scrollToSection('work3')" class="px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white border border-white/20 transition font-medium">
                     <i class="fa-solid fa-folder-tree mr-1 text-amber-400"></i> ワーク３（NotebookLM）
                 </button>
+                <button onclick="scrollToSection('work4')" class="px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white border border-white/20 transition font-medium">
+                    <i class="fa-solid fa-graduation-cap mr-1 text-amber-400"></i> ワーク４（Classroom）
+                </button>
                 <button onclick="scrollToSection('summary')" class="px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white border border-white/20 transition font-medium">
                     <i class="fa-solid fa-flag-checkered mr-1 text-amber-400"></i> まとめ・移行ガイド
                 </button>
@@ -440,6 +443,95 @@
                             補習授業や解説用の10分スライド構成案を自動出力（プレゼン準備の効率化）。
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: WORK 4 -->
+        <section id="work4" class="scroll-mt-24 space-y-4">
+            <div class="flex items-center gap-3">
+                <span class="px-3 py-1 rounded-md bg-kobemath-900 text-white font-black text-xs shadow-xs">ワーク４</span>
+                <h3 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">Gemini in Google Classroom</h3>
+            </div>
+
+            <div class="glass-card rounded-2xl p-6 shadow-sm border border-kobemath-100 dark:border-slate-800 space-y-6">
+                <div class="space-y-3">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 bg-slate-100 dark:bg-slate-800/80 p-4 rounded-xl border border-slate-200 dark:border-slate-700">
+                        <div>
+                            <span class="px-2.5 py-0.5 bg-emerald-600 text-white font-bold text-[10px] rounded">日本語対応</span>
+                            <h4 class="font-bold text-base text-slate-900 dark:text-white mt-1">
+                                Gemini in Google Classroom
+                            </h4>
+                            <p class="text-xs text-slate-600 dark:text-slate-300 mt-0.5">
+                                通常のGeminiを使うよりも、複雑な指示文（プロンプト）を入力することなく、簡潔な操作で分かりやすい回答を得ることができます。
+                            </p>
+                        </div>
+                        <a href="https://classroom.google.com/ai" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 bg-kobemath-900 hover:bg-kobemath-800 text-white font-bold text-xs rounded-xl shadow-xs transition flex items-center gap-2 whitespace-nowrap">
+                            <i class="fa-solid fa-shapes"></i> Classroom AIを開く <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <div class="bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/60 p-3 rounded-xl text-xs text-amber-900 dark:text-amber-200 flex items-center gap-2">
+                        <i class="fa-solid fa-circle-info text-amber-600 dark:text-amber-400"></i>
+                        <span><strong>学年指定の注意点：</strong> Googleの仕様上、対象学年の表記は「高１＝10年生、高２＝11年生、高３＝12年生」となります。</span>
+                    </div>
+                </div>
+
+                <!-- Examples Grid -->
+                <div class="space-y-3">
+                    <h4 class="font-bold text-xs text-slate-800 dark:text-slate-200 flex items-center gap-1.5">
+                        <i class="fa-solid fa-sliders text-kobemath-900 dark:text-emerald-400"></i> Geminiでコンテンツや教材を作成する具体例
+                    </h4>
+
+                    <div class="grid md:grid-cols-3 gap-4 text-xs">
+                        <!-- Example 1 -->
+                        <div class="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2 flex flex-col justify-between">
+                            <div class="space-y-2">
+                                <span class="font-bold text-kobemath-900 dark:text-emerald-400 block border-b border-slate-100 dark:border-slate-800 pb-1">
+                                    （１）魅力的な導入部を作成する
+                                </span>
+                                <ul class="space-y-1.5 text-slate-600 dark:text-slate-300">
+                                    <li>・<strong>対象学年：</strong> 11（高校2年生）</li>
+                                    <li>・<strong>指導内容：</strong> 仮説検定（数学があまり得意ではない生徒対象）</li>
+                                    <li>・<strong>生徒の参加形式：</strong> 好奇心への訴えかけ</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Example 2 -->
+                        <div class="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2 flex flex-col justify-between">
+                            <div class="space-y-2">
+                                <span class="font-bold text-kobemath-900 dark:text-emerald-400 block border-b border-slate-100 dark:border-slate-800 pb-1">
+                                    （２）ルーブリックを作成する
+                                </span>
+                                <ul class="space-y-1.5 text-slate-600 dark:text-slate-300">
+                                    <li>・<strong>対象学年：</strong> 10（高校1年生）</li>
+                                    <li>・<strong>パフォーマンスレベル：</strong> 4</li>
+                                    <li>・<strong>課題の手順：</strong> ジグソー法でのプレゼンテーション</li>
+                                    <li>・<strong>目指すスキル：</strong> 思考・判断・表現</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Example 3 -->
+                        <div class="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2 flex flex-col justify-between">
+                            <div class="space-y-2">
+                                <span class="font-bold text-kobemath-900 dark:text-emerald-400 block border-b border-slate-100 dark:border-slate-800 pb-1">
+                                    （３）よくある誤解に対応する
+                                </span>
+                                <ul class="space-y-1.5 text-slate-600 dark:text-slate-300">
+                                    <li>・<strong>対象学年：</strong> 10（高校1年生）</li>
+                                    <li>・<strong>指導内容：</strong> 三角比</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Notice -->
+                <div class="bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 p-3.5 rounded-xl text-xs text-emerald-900 dark:text-emerald-200 flex items-center gap-2">
+                    <i class="fa-solid fa-comments text-emerald-600 dark:text-emerald-400 text-base"></i>
+                    <span>■ ここまでのワークで明日ご自身の業務でまず試してみたい「AIの使い道」はどういったものですか？お隣の先生と対話してみてください！</span>
                 </div>
             </div>
         </section>
